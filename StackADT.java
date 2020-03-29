@@ -3,7 +3,7 @@
  *course CIS303
  *@since 3/29/2020
  *@assignment 4b
- description: Stack interface adapted from Clifford Shaffers Data Structures and Algorithim Analysis, Chapter 4.2.1
+ *description: Stack interface adapted from Clifford Shaffers Data Structures and Algorithim Analysis, Chapter 4.2.1
  */
 
  public interface StackADT<E>{
