@@ -6,7 +6,7 @@
  description: AStack data structure adapted from Clifford Shaffers Data Structures and Algorithim Analysis, Chapter 4.2.1
  */
 
- public class AStack<E> implements StackADT{
+ public class AStack<E> implements StackADT<E>{
 
     private static final int defaultSize = 10;
 
@@ -30,5 +30,21 @@
         maxSize = size;
         top = 0;
         listArray = (E[]) new Object[size];
+    }
+
+    /**
+     * Method clears the stack
+     */
+    public void clear(){
+        top = 0;
+    }
+
+    /**
+     * Method pushes element onto the stack
+     * @param element element to be pushed onto the stack
+     */
+    public void push(E element){
+        assert top != maxSize : "Stack is full";
+        listArray[top++] = element;
     }
  }
