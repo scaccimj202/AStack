@@ -47,4 +47,30 @@
         assert top != maxSize : "Stack is full";
         listArray[top++] = element;
     }
+
+    /**
+     * Method pop's the top element off the stack, provided it is not empty
+     * @return the top element from the stack
+     */
+    public E pop(){
+        assert top != 0 : "Stack is empty";
+        return listArray[--top];
+    }
+
+    /**
+     * Method 'peeks' and returns the top element on the stack without pop'ing
+     * @return the top element on the stack, without pop'ing it
+     */
+    public E topValue(){
+        assert top != 0 : "Stack is empty";
+        return listArray[top-1];
+    }
+
+    /**
+     * Method returns the number of elements in the stack
+     * @return the number of elements in the stack
+     */
+    public int length(){
+        return top;
+    }
  }
