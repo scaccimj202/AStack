@@ -14,5 +14,21 @@
     private int top;
     private E [] listArray;
 
-    
+    /**
+     * Constructor with default size
+     */
+    AStack(){
+        this(defaultSize);
+    }
+
+    /**
+     * Constructor that takes a size parameter.
+     * @param size the size of the stack to be created
+     */
+    @SuppressWarnings("unchecked")
+    AStack(int size){
+        maxSize = size;
+        top = 0;
+        listArray = (E[]) new Object[size];
+    }
  }
